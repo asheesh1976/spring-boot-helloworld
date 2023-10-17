@@ -19,5 +19,5 @@ jobs:
            username: ${{ secrets.ACR_USERNAME }}
            password: ${{ secrets.ACR_PASSWORD }}
       - run: |
-          docker build . -t ${{ secrets.ACR_ENDPOINT }}/knowledgefactory:${{ github.sha }}
-          docker push ${{ secrets.ACR_ENDPOINT }}/knowledgefactory:${{ github.sha }}
+          docker build . -t ${{ secrets.ACR_ENDPOINT }}/wingtiptoystcsregistry:${{ github.sha }}
+          docker push ${{ secrets.ACR_ENDPOINT }}/wingtiptoystcsregistry:${{ github.sha }}
